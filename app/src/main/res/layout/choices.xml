@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></FrameLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="50dp"
+        android:text="Standard Magic 8 Ball!"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="50dp"
+        android:text="Ask a Wookie!, make sure you dont upset him!"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="55dp"
+        android:text="Get Shocking Advice from a pikachu!"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="55dp"
+        android:text="ask Homer j Simpson what he thinks"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="55dp"
+        android:text="Bronie or Pegasister? ask a pony!"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="55dp"
+        android:text="Ask the Griffin family from family guy"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="55dp"
+        android:text="@string/alternate_opinion"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="55dp"
+        android:text="@string/alternate_opinion"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="55dp"
+        android:text="@string/alternate_opinion"
+        android:textColor="#ffffff"
+        android:background="#000"
+        />
+
+</LinearLayout>
