@@ -8,6 +8,7 @@
         android:layout_height="fill_parent" android:gravity="bottom">
 
         <Button
+            android:id="@+id/choicesButton"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="@string/alternate_opinion"

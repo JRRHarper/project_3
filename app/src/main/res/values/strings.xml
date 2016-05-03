@@ -10,4 +10,5 @@
     <string name="wookie_default_answer">Rhawk-Arrgh! - You are an idiot! \n(he doesn\'t seem impressed)</string>
     <string name="default_answer">I do not understand... please ask again</string>
     <string name="alternate_opinion">Want to ask someone specific? \nClick Here!</string>
+    <string name="main_page_ask">Ask a question to one of the following</string>
 </resources>
