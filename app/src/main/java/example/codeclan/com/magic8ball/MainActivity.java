@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     Button mAskPonies;
     Button mAskFamilyGuy;
     Button mAskGlados;
+    Button mAskArnie;
 
 
     @Override
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mAskPonies = (Button) findViewById(R.id.askPonies);
         mAskFamilyGuy = (Button) findViewById(R.id.askFamilyGuy);
         mAskGlados = (Button) findViewById(R.id.askGlados);
-
+        mAskArnie = (Button) findViewById(R.id.askArnie);
 
 
         mEightBall.setOnClickListener(new View.OnClickListener() {
@@ -65,6 +66,78 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        mAskPika.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Tester: ", "button click!");
+
+                Intent submitQuestion = new Intent(MainActivity.this, PikaAsk.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
+
+        mAskHomer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Tester: ", "button click!");
+
+                Intent submitQuestion = new Intent(MainActivity.this, HomerAsk.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
+
+        mAskPonies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Tester: ", "button click!");
+
+                Intent submitQuestion = new Intent(MainActivity.this, PoniesAsk.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
+
+        mAskFamilyGuy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Tester: ", "button click!");
+
+                Intent submitQuestion = new Intent(MainActivity.this, FamilyGuyAsk.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
+
+        mAskGlados.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Tester: ", "button click!");
+
+                Intent submitQuestion = new Intent(MainActivity.this, GladosAsk.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
+
+        mAskArnie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Tester: ", "button click!");
+
+                Intent submitQuestion = new Intent(MainActivity.this, ArnieAsk.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
     }
 
 }

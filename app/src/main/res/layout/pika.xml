@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black">
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:gravity="bottom">
+
+        <Button
+            android:id="@+id/choicesButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/alternate_opinion"
+            android:textColor="#ffffff"
+            android:background="#000"
+            android:layout_gravity="bottom"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></FrameLayout>
+
+        <TextView
+            android:id="@+id/initialText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/question_text"
+            android:textColor="@color/swText"
+            android:layout_gravity="center"
+            android:textSize="23dp"/>
+
+
+        <EditText
+            android:id="@+id/descriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/swText"
+            android:backgroundTint="@color/swText"
+            />
+
+
+        <ImageView
+            android:id="@+id/fortuneImage"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:src="@drawable/chewie"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/descriptionText"
+            android:layout_marginTop="10dp"/>
+
+
+        <Button
+            android:id="@+id/fortuneButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/fortuneImage"
+            android:text="@string/wookie_ask"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+</FrameLayout>

@@ -48,6 +48,79 @@
         </activity>
 
 
+        <activity android:name=".PikaAsk"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".PikaAnswer"
+            android:label="@string/app_name"
+            android:parentActivityName=".PikaAsk">
+
+        </activity>
+
+
+        <activity android:name=".HomerAsk"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".HomerAnswer"
+            android:label="@string/app_name"
+            android:parentActivityName=".PikaAsk">
+
+        </activity>
+
+
+        <activity android:name=".PoniesAsk"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".PoniesAnswer"
+            android:label="@string/app_name"
+            android:parentActivityName=".PikaAsk">
+
+        </activity>
+
+
+        <activity android:name=".FamilyGuyAsk"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".FamilyGuyAnswer"
+            android:label="@string/app_name"
+            android:parentActivityName=".PikaAsk">
+
+        </activity>
+
+
+        <activity android:name=".GladosAsk"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".GladosAnswer"
+            android:label="@string/app_name"
+            android:parentActivityName=".PikaAsk">
+
+        </activity>
+
+
+        <activity android:name=".ArnieAsk"
+            android:label="@string/app_name"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity android:name=".ArnieAnswer"
+            android:label="@string/app_name"
+            android:parentActivityName=".PikaAsk">
+
+        </activity>
+
+
+
     </application>
 
 
