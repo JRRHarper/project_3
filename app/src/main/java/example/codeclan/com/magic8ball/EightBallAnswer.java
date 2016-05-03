@@ -30,7 +30,7 @@ public class EightBallAnswer extends AppCompatActivity {
             "Yes, definitely",
             "Most likely",
             "Yes",
-            "I’m Hungry, Ask later",
+            "It is unclear, Ask later",
             "Better not tell you now",
             "Don’t count on it",
             "Outlook not so good",

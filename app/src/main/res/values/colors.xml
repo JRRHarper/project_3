@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="barbie">#FF00FF</color>
+    <color name="swText">#ffd700</color>
+    <color name="black">#000</color>
 </resources>

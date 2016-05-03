@@ -53,6 +53,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        mAskChewie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.d("Tester: ", "button click!");
+
+                Intent submitQuestion = new Intent(MainActivity.this, WookieAsk.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
+
     }
 
 }
