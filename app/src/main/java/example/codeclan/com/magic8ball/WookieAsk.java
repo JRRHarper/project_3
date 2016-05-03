@@ -19,6 +19,7 @@ public class WookieAsk extends AppCompatActivity {
     EditText mQuestionInput;
     ImageView mFortuneImage;
     Button mFortuneButton;
+    Button mChoicesButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -32,6 +33,7 @@ public class WookieAsk extends AppCompatActivity {
         mQuestionInput = (EditText) findViewById(R.id.descriptionText);
         mFortuneImage = (ImageView) findViewById(R.id.fortuneImage);
         mFortuneButton = (Button) findViewById(R.id.fortuneButton);
+        mChoicesButton = (Button) findViewById(R.id.choicesButton);
 
 
         if (question.isEmpty() || question.equals(mainQuestion)) {
@@ -55,6 +57,19 @@ public class WookieAsk extends AppCompatActivity {
                 startActivity(submitQuestion);
             }
         });
+
+
+        mChoicesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent submitQuestion = new Intent(WookieAsk.this, ChoicesList.class);
+
+                submitQuestion.putExtra("question", mQuestionInput.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+
+        });
+
 
     }
 }

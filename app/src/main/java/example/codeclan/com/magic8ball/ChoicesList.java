@@ -77,7 +77,7 @@ public class ChoicesList extends AppCompatActivity {
 
                 Intent submitQuestion = new Intent(ChoicesList.this, WookieAsk.class);
 
-                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                submitQuestion.putExtra("question", question);
                 startActivity(submitQuestion);
             }
         });

@@ -1,9 +1,12 @@
 package example.codeclan.com.magic8ball;
 
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,6 +23,7 @@ public class WookieAnswer extends AppCompatActivity {
     ImageView mAnswerImage;
     TextView mResponseText;
     TextView mActualResponse;
+    Button mChoicesButton;
 
 
     String responseList[] = {
@@ -64,6 +68,7 @@ public class WookieAnswer extends AppCompatActivity {
         mAnswerImage = (ImageView) findViewById(R.id.answerImage);
         mResponseText = (TextView) findViewById(R.id.responseText);
         mActualResponse = (TextView) findViewById(R.id.actualResponse);
+        mChoicesButton = (Button) findViewById(R.id.choicesButton);
 
         String question = this.getIntent().getExtras().getString("question");
         if(question.isEmpty()){
@@ -76,10 +81,18 @@ public class WookieAnswer extends AppCompatActivity {
             mActualResponse.setText(responseList[index]);
             MediaPlayer mp = MediaPlayer.create(this, audioList[index]);
             mp.start();
-
-
-
         }
+
+        mChoicesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent submitQuestion = new Intent(WookieAnswer.this, ChoicesList.class);
+
+                submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
+                startActivity(submitQuestion);
+            }
+        });
+
 
 
     }

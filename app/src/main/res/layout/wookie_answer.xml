@@ -1,9 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@color/black">
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:gravity="bottom">
+
+        <Button
+            android:id="@+id/choicesButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/alternate_opinion"
+            android:textColor="#ffffff"
+            android:background="#000"
+            android:layout_gravity="bottom"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
 
 
 
@@ -41,7 +62,7 @@
         android:id="@+id/responseText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/answer_is"
+        android:text="@string/wookie_answer_is"
         android:textColor="@color/swText"
         android:layout_gravity="center"
         android:textSize="23dp"/>
@@ -54,6 +75,8 @@
         android:layout_marginTop="15dp"
         android:text="@string/default_answer"
         android:textColor="@color/swText"
-        android:textSize="23dp"/>
+        android:textSize="20dp"/>
 
 </LinearLayout>
+
+    </FrameLayout>
