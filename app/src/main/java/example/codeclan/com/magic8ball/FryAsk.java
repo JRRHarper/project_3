@@ -13,7 +13,7 @@ import android.widget.TextView;
 /**
  * Created by user on 03/05/2016.
  */
-public class HomerAsk extends AppCompatActivity {
+public class FryAsk extends AppCompatActivity {
 
     TextView mInitialText;
     EditText mQuestionInput;
@@ -24,7 +24,7 @@ public class HomerAsk extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.homer);
+        setContentView(R.layout.fry);
 
         String question = this.getIntent().getExtras().getString("question");
         String mainQuestion = getString(R.string.main_page_ask);
@@ -51,7 +51,7 @@ public class HomerAsk extends AppCompatActivity {
             public void onClick(View v) {
                 Log.d("Tester: ", "button click!");
 
-                Intent submitQuestion = new Intent(HomerAsk.this, HomerAnswer.class);
+                Intent submitQuestion = new Intent(FryAsk.this, FryAnswer.class);
 
                 submitQuestion.putExtra("question", mQuestionInput.getText().toString().trim());
                 startActivity(submitQuestion);
@@ -62,7 +62,7 @@ public class HomerAsk extends AppCompatActivity {
         mChoicesButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent submitQuestion = new Intent(HomerAsk.this, ChoicesList.class);
+                Intent submitQuestion = new Intent(FryAsk.this, ChoicesList.class);
 
                 submitQuestion.putExtra("question", mQuestionInput.getText().toString().trim());
                 startActivity(submitQuestion);

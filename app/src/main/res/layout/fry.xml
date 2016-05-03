@@ -50,7 +50,7 @@
             android:id="@+id/fortuneImage"
             android:layout_width="match_parent"
             android:layout_height="290dp"
-            android:src="@drawable/arnie1"
+            android:src="@drawable/fry1"
             android:layout_marginTop="10dp"/>
 
 

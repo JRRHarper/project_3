@@ -25,44 +25,56 @@
         android:layout_height="match_parent"
         android:layout_gravity="bottom">
 
-        `
         <TextView
-            android:id="@+id/initialText"
+            android:id="@+id/answerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question_text"
+            android:text="@string/answer_text"
+            android:textColor="@color/barbie"
+            android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:textColor="#FF00FF"
             android:textSize="23dp"/>
 
-
-        <EditText
-            android:id="@+id/descriptionText"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/inputQuestion"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#FF00FF"/>
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/no_question"
+            android:textColor="@color/barbie"
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp"/>
 
 
         <ImageView
-            android:id="@+id/fortuneImage"
+            android:id="@+id/answerImage"
             android:layout_width="match_parent"
             android:layout_height="290dp"
-            android:src="@drawable/arnie1"
+            android:src="@drawable/fry2"
+            android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"/>
 
+        <TextView
+            android:id="@+id/responseText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/answer_is"
+            android:textColor="@color/barbie"
+            android:layout_gravity="center"
+            android:textSize="23dp"/>
 
-        <Button
-            android:id="@+id/fortuneButton"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="@string/ask_question"
-            android:textSize="20dp"
+        <TextView
+            android:id="@+id/actualResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:textColor="#FFF"
-            android:background="#FF00FF"/>
+            android:text="@string/default_answer"
+            android:textColor="@color/barbie"
+            android:textSize="23dp"/>
+
+
 
 
     </LinearLayout>

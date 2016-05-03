@@ -1,15 +1,12 @@
 package example.codeclan.com.magic8ball;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import java.util.Random;
 
 /**
  * Created by user on 02/05/2016.
@@ -23,7 +20,7 @@ public class ChoicesList extends AppCompatActivity {
     Button mAskHomer;
     Button mAskPonies;
     Button mAskFamilyGuy;
-    Button mAskGlados;
+    Button mAskFry;
     Button mAskArnie;
 
 
@@ -40,7 +37,7 @@ public class ChoicesList extends AppCompatActivity {
         mAskHomer = (Button) findViewById(R.id.askHomer);
         mAskPonies = (Button) findViewById(R.id.askPonies);
         mAskFamilyGuy = (Button) findViewById(R.id.askFamilyGuy);
-        mAskGlados = (Button) findViewById(R.id.askGlados);
+        mAskFry = (Button) findViewById(R.id.askFry);
         mAskArnie = (Button) findViewById(R.id.askArnie);
 
 
@@ -132,12 +129,12 @@ public class ChoicesList extends AppCompatActivity {
             }
         });
 
-        mAskGlados.setOnClickListener(new View.OnClickListener() {
+        mAskFry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("Tester: ", "button click!");
 
-                Intent submitQuestion = new Intent(ChoicesList.this, GladosAsk.class);
+                Intent submitQuestion = new Intent(ChoicesList.this, FryAsk.class);
 
                 submitQuestion.putExtra("question", question);
                 startActivity(submitQuestion);

@@ -24,7 +24,7 @@ public class PikaAsk extends AppCompatActivity {
         @Override
         protected void onCreate(Bundle savedInstanceState){
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.wookie);
+            setContentView(R.layout.pika);
 
             String question = this.getIntent().getExtras().getString("question");
             String mainQuestion = getString(R.string.main_page_ask);

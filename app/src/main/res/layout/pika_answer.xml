@@ -2,8 +2,7 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:background="@color/black">
+    android:layout_height="fill_parent">
 
     <RelativeLayout android:layout_width="fill_parent"
         android:layout_height="fill_parent" android:gravity="bottom">
@@ -26,17 +25,15 @@
         android:layout_height="match_parent"
         android:layout_gravity="bottom">
 
-
-
         <TextView
             android:id="@+id/answerText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/answer_text"
-            android:textColor="@color/swText"
+            android:textColor="@color/barbie"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
-            android:textSize="25dp"/>
+            android:textSize="23dp"/>
 
         <TextView
             android:id="@+id/inputQuestion"
@@ -45,7 +42,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
             android:text="@string/no_question"
-            android:textColor="@color/swText"
+            android:textColor="@color/barbie"
             android:layout_centerHorizontal="true"
             android:textSize="20dp"/>
 
@@ -53,8 +50,8 @@
         <ImageView
             android:id="@+id/answerImage"
             android:layout_width="match_parent"
-            android:layout_height="340dp"
-            android:src="@drawable/chewie4"
+            android:layout_height="290dp"
+            android:src="@drawable/pikachu2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"/>
 
@@ -62,8 +59,8 @@
             android:id="@+id/responseText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/wookie_answer_is"
-            android:textColor="@color/swText"
+            android:text="@string/answer_is"
+            android:textColor="@color/barbie"
             android:layout_gravity="center"
             android:textSize="23dp"/>
 
@@ -74,9 +71,11 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:text="@string/default_answer"
-            android:textColor="@color/swText"
-            android:textSize="20dp"/>
+            android:textColor="@color/barbie"
+            android:textSize="23dp"/>
+
+
+
 
     </LinearLayout>
-
 </FrameLayout>

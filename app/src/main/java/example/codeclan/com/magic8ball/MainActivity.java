@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Button mAskHomer;
     Button mAskPonies;
     Button mAskFamilyGuy;
-    Button mAskGlados;
+    Button mAskFry;
     Button mAskArnie;
 
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mAskHomer = (Button) findViewById(R.id.askHomer);
         mAskPonies = (Button) findViewById(R.id.askPonies);
         mAskFamilyGuy = (Button) findViewById(R.id.askFamilyGuy);
-        mAskGlados = (Button) findViewById(R.id.askGlados);
+        mAskFry = (Button) findViewById(R.id.askFry);
         mAskArnie = (Button) findViewById(R.id.askArnie);
 
 
@@ -115,12 +115,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        mAskGlados.setOnClickListener(new View.OnClickListener() {
+        mAskFry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Log.d("Tester: ", "button click!");
 
-                Intent submitQuestion = new Intent(MainActivity.this, GladosAsk.class);
+                Intent submitQuestion = new Intent(MainActivity.this, FryAsk.class);
 
                 submitQuestion.putExtra("question", mInputQuestion.getText().toString().trim());
                 startActivity(submitQuestion);

@@ -75,11 +75,11 @@
         android:background="#000"
         />
     <Button
-        android:id="@+id/askGlados"
+        android:id="@+id/askFry"
         android:layout_width="match_parent"
         android:layout_marginTop="5dp"
         android:layout_height="47dp"
-        android:text="ask glados if there will be cake..."
+        android:text="Ask Fry from Futurama!"
         android:textColor="#ffffff"
         android:background="#000"
         />
