@@ -11,4 +11,10 @@
     <string name="default_answer">I do not understand... please ask again</string>
     <string name="alternate_opinion">Want to ask someone specific? \nClick Here!</string>
     <string name="main_page_ask">Ask a question to one of the following</string>
+    <string name="pika_ask_q">Ask Pikachu a question \n(preferably a yes or no question)</string>
+    <string name="homer_ask_q">Ask Homer Simpson a question \n(preferably a yes or no question)</string>
+    <string name="ponies_ask_q">Ask the Ponies a question \n(preferably a yes or no question)</string>
+    <string name="peter_ask_q">Ask Peter Griffin a question \n(preferably a yes or no question)</string>
+    <string name="fry_ask_q">Ask Phillip J. Fry a question \n(preferably a yes or no question)</string>
+    <string name="arnie_ask_q">Ask Arnold Schwarzenegger a question \n(preferably a yes or no question)</string>
 </resources>
