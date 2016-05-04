@@ -2,7 +2,8 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@color/peter_white">
 
     <RelativeLayout android:layout_width="fill_parent"
         android:layout_height="fill_parent" android:gravity="bottom">
@@ -30,10 +31,11 @@
             android:id="@+id/initialText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question_text"
+            android:text="@string/arnie_ask_q"
+            android:gravity="center"
             android:layout_gravity="center"
-            android:textColor="#FF00FF"
-            android:textSize="23dp"/>
+            android:textColor="@color/black"
+            android:textSize="21dp"/>
 
 
         <EditText
@@ -43,7 +45,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:textColor="#FF00FF"/>
+            android:textColor="@color/black"/>
 
 
         <ImageView
@@ -61,8 +63,8 @@
             android:text="@string/ask_question"
             android:textSize="20dp"
             android:layout_marginTop="15dp"
-            android:textColor="#FFF"
-            android:background="#FF00FF"/>
+            android:textColor="@color/black"
+            android:background="@color/arnie_brown"/>
 
 
     </LinearLayout>

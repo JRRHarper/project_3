@@ -2,7 +2,8 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="@color/fry_blue">
 
     <RelativeLayout android:layout_width="fill_parent"
         android:layout_height="fill_parent" android:gravity="bottom">
@@ -30,9 +31,10 @@
             android:id="@+id/initialText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question_text"
+            android:text="@string/fry_ask_q"
             android:layout_gravity="center"
-            android:textColor="#FF00FF"
+            android:gravity="center"
+            android:textColor="@color/fry_red"
             android:textSize="23dp"/>
 
 
@@ -43,7 +45,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:textColor="#FF00FF"/>
+            android:textColor="@color/fry_red"/>
 
 
         <ImageView
@@ -61,8 +63,8 @@
             android:text="@string/ask_question"
             android:textSize="20dp"
             android:layout_marginTop="15dp"
-            android:textColor="#FFF"
-            android:background="#FF00FF"/>
+            android:textColor="@color/peter_white"
+            android:background="@color/fry_orange"/>
 
 
     </LinearLayout>

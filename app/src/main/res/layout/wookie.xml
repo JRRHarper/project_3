@@ -35,9 +35,10 @@
         android:id="@+id/initialText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/question_text"
+        android:text="@string/wookie_ask_q"
         android:textColor="@color/swText"
         android:layout_gravity="center"
+        android:gravity="center"
         android:textSize="23dp"/>
 
 

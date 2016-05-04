@@ -2,7 +2,8 @@
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent"
+    android:background="#FFE62D">
 
     <RelativeLayout android:layout_width="fill_parent"
         android:layout_height="fill_parent" android:gravity="bottom">
@@ -30,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/answer_text"
-            android:textColor="@color/barbie"
+            android:textColor="@color/pika_brown"
             android:layout_centerHorizontal="true"
             android:layout_gravity="center"
             android:textSize="23dp"/>
@@ -42,7 +43,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginTop="15dp"
             android:text="@string/no_question"
-            android:textColor="@color/barbie"
+            android:textColor="@color/pika_red"
             android:layout_centerHorizontal="true"
             android:textSize="20dp"/>
 
@@ -57,10 +58,11 @@
 
         <TextView
             android:id="@+id/responseText"
+            android:layout_marginTop="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/answer_is"
-            android:textColor="@color/barbie"
+            android:text="@string/pika_answer_is"
+            android:textColor="@color/pika_brown"
             android:layout_gravity="center"
             android:textSize="23dp"/>
 
@@ -71,7 +73,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:text="@string/default_answer"
-            android:textColor="@color/barbie"
+            android:textColor="@color/pika_red"
             android:textSize="23dp"/>
 
 

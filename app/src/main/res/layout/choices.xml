@@ -46,8 +46,8 @@
         android:layout_marginTop="5dp"
         android:layout_height="47dp"
         android:text="Get Shocking Advice from a pikachu!"
-        android:textColor="#e92929"
-        android:background="#ffe62d"
+        android:textColor="@color/pika_red"
+        android:background="@color/pika_yellow"
         android:textSize="19dp"
         />
     <Button
@@ -56,8 +56,8 @@
         android:layout_marginTop="5dp"
         android:layout_height="47dp"
         android:text="ask Homer Simpson what he thinks"
-        android:textColor="#FFD90F"
-        android:background="#77AAEF"
+        android:textColor="@color/homer_yellow"
+        android:background="@color/homer_blue"
         android:textSize="19dp"
         />
     <Button
@@ -66,8 +66,8 @@
         android:layout_marginTop="5dp"
         android:layout_height="47dp"
         android:text="Bronie or Pegasister? ask a pony!"
-        android:textColor="#EB81B4"
-        android:background="#FEE78F"
+        android:textColor="@color/ponies_fs_pink"
+        android:background="@color/ponies_fs_yellow"
         android:textSize="20dp"
         />
     <Button
@@ -77,7 +77,7 @@
         android:layout_height="47dp"
         android:text="Ask the family guy - Peter Griffin"
         android:textColor="#ffffff"
-        android:background="#008000"
+        android:background="@color/peter_green"
         android:textSize="20dp"
         />
     <Button
@@ -86,8 +86,8 @@
         android:layout_marginTop="5dp"
         android:layout_height="47dp"
         android:text="Ask Fry from Futurama!"
-        android:textColor="#ECA112"
-        android:background="#CE004D"
+        android:textColor="@color/fry_orange"
+        android:background="@color/fry_red"
         android:textSize="22dp"
         />
     <Button
@@ -96,8 +96,8 @@
         android:layout_marginTop="5dp"
         android:layout_height="47dp"
         android:text="ask arnie for some wisdom"
-        android:textColor="#EE0000"
-        android:background="#CDAA7D"
+        android:textColor="@color/arnie_red"
+        android:background="@color/arnie_brown"
         android:textSize="20dp"
         />
 

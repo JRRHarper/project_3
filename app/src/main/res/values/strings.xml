@@ -1,20 +1,36 @@
 <resources>
     <string name="app_name">Magic 8 Ball</string>
-    <string name="question_text">Ask the Magic 8 Ball a question \n(preferably a yes or no question)</string>
     <string name="wookie_ask">Aarrragghuuhw! (ask question)</string>
     <string name="ask_question">Ask Question</string>
     <string name="answer_text">You asked...</string>
     <string name="no_question">Wait a minute, You didn\'t ask a question!</string>
-    <string name="wookie_answer_is">Chewbacca says...</string>
-    <string name="answer_is">Magic 8 Ball says...</string>
     <string name="wookie_default_answer">Rhawk-Arrgh! - You are an idiot! \n(he doesn\'t seem impressed)</string>
     <string name="default_answer">I do not understand... please ask again</string>
-    <string name="alternate_opinion">Want to ask someone specific? \nClick Here!</string>
+    <string name="alternate_opinion">Want to ask someone else? \nClick Here!</string>
     <string name="main_page_ask">Ask a question to one of the following</string>
+
+    <string name="question_text">Ask the Magic 8 Ball a question \n(preferably a yes or no question)</string>
+    <string name="wookie_ask_q">Ask Chewbaca a question \n(preferably a yes or no question)</string>
     <string name="pika_ask_q">Ask Pikachu a question \n(preferably a yes or no question)</string>
     <string name="homer_ask_q">Ask Homer Simpson a question \n(preferably a yes or no question)</string>
     <string name="ponies_ask_q">Ask the Ponies a question \n(preferably a yes or no question)</string>
     <string name="peter_ask_q">Ask Peter Griffin a question \n(preferably a yes or no question)</string>
     <string name="fry_ask_q">Ask Phillip J. Fry a question \n(preferably a yes or no question)</string>
     <string name="arnie_ask_q">Ask Arnold Schwarzenegger a question \n(preferably a yes or no question)</string>
+
+
+
+    <string name="answer_is">Magic 8 Ball says...</string>
+    <string name="wookie_answer_is">Chewbacca says...</string>
+    <string name="pika_answer_is">Pikachu Says...</string>
+    <string name="homer_answer_is">Homer replies with...</string>
+    <string name="ponies_answer_is">The response is...</string>
+    <string name="peter_answer_is">Peter Says...</string>
+    <string name="fry_answer_is">Fry Says...</string>
+    <string name="arnie_answer_is">Arnie responds with...</string>
+
+
+
+
+
 </resources>

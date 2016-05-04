@@ -6,4 +6,49 @@
     <color name="barbie">#FF00FF</color>
     <color name="swText">#ffd700</color>
     <color name="black">#000</color>
+
+
+
+    <color name="pika_yellow">#ffe62d</color>
+    <color name="pika_brown">#5c3613</color>
+    <color name="pika_red">#e92929</color>
+
+    <color name="homer_yellow">#FFD90F</color>
+    <color name="homer_blue">#77AAEF</color>
+
+    <color name="ponies_fs_pink">#EB81B4</color>
+    <color name="ponies_fs_yellow">#FEE78F</color>
+    <color name="ponies_aj_orange">#FFC261</color>
+    <color name="ponies_aj_yellow">#FDF6AF</color>
+    <color name="ponies_aj_red">#EE4043</color>
+    <color name="ponies_aj_green">#65BB4D</color>
+    <color name="ponies_aj_darkorange">#F26F31</color>
+    <color name="ponies_dh_grey">#AEB2C0</color>
+    <color name="ponies_dh_yellow">#FAF9AF</color>
+    <color name="ponies_dh_darkyellow">#E7DD6B</color>
+    <color name="ponies_dh_purple">#DFDFFF</color>
+
+    <color name="ponies_pp_pink">#F3B6CF</color>
+    <color name="ponies_pp_cutie_blue">#80D1F6</color>
+    <color name="ponies_pp_cutie_yellow">#FDF6AF</color>
+
+
+
+    <color name="peter_green">#008000</color>
+    <color name="peter_lightgreen">#DDF179</color>
+    <color name="peter_skin">#DBAE85</color>
+    <color name="peter_darkgreen">#136B0B</color>
+    <color name="peter_brown">#823D16</color>
+    <color name="peter_white">#FCFCFC</color>
+
+
+    <color name="fry_orange">#D46B0F</color>
+    <color name="fry_red">#CE004D</color>
+    <color name="fry_skin">#F0CBC2</color>
+    <color name="fry_blue">#86AED2</color>
+    <color name="fry_darkgrey">#4C4D51</color>
+
+    <color name="arnie_red">#EE0000</color>
+    <color name="arnie_brown">#CDAA7D</color>
+
 </resources>

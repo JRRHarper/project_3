@@ -34,7 +34,8 @@
             android:layout_height="wrap_content"
             android:text="@string/pika_ask_q"
             android:layout_gravity="center"
-            android:textColor="#5c3613"
+            android:gravity="center"
+            android:textColor="@color/pika_brown"
             android:textSize="23dp"/>
 
 
@@ -45,7 +46,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:textColor="#FF00FF"/>
+            android:textColor="@color/pika_brown"/>
 
 
         <ImageView
@@ -63,8 +64,8 @@
             android:text="@string/ask_question"
             android:textSize="20dp"
             android:layout_marginTop="15dp"
-            android:textColor="#FFF"
-            android:background="#FF00FF"/>
+            android:textColor="#000"
+            android:background="@color/pika_red"/>
 
 
     </LinearLayout>
