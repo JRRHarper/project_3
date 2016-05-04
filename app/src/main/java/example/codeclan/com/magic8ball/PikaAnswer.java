@@ -38,7 +38,7 @@ public class PikaAnswer extends AppCompatActivity {
     };
 
     int audioList[] = {
-            R.raw.wookie_certain_0,
+            R.raw.pika.pika_yes,
             R.raw.wookie_without_doubt_1,
             R.raw.wookie_definitely_2,
             R.raw.wookie_likely_3,
