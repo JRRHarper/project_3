@@ -25,16 +25,26 @@ public class ArnieAnswer extends AppCompatActivity {
 
 
     String responseList[] = {
-            "It is certain",
-            "Without a doubt",
-            "Yes, definitely",
-            "Most likely",
+            "Affirmative",
+            "Correct",
+            "Yesss!",
             "Yes",
-            "It is unclear, Ask later",
-            "Better not tell you now",
-            "Don’t count on it",
-            "Outlook not so good",
-            "Very doubtful"
+            "I don't know",
+            "I'm not interested in that",
+            "Don’t be ridiculous",
+            "One of us is in deep trouble"
+    };
+
+    int audioList[] = {
+            R.raw.arnie_affirmative_0,
+            R.raw.arnie_correct_1,
+            R.raw.arnie_yesssss_2,
+            R.raw.arnie_yes_3,
+            R.raw.arnie_dont_know_4,
+            R.raw.arnie_not_interested_5,
+            R.raw.arnie_ridiculous_6,
+            R.raw.arnie_deep_trouble_7
+
     };
 
 
@@ -59,15 +69,14 @@ public class ArnieAnswer extends AppCompatActivity {
         String noQuestion = getString(R.string.no_question);
 
         if (question.isEmpty() || question.equals(mainQuestion) || question.equals(noQuestion)) {
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.sad_trombone);
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.arnie_break_spine);
             mp.start();
 
         } else {
             int index = new Random().nextInt(responseList.length);
             mInputQuestion.setText(question);
             mActualResponse.setText(responseList[index]);
-
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.eight_ball);
+            MediaPlayer mp = MediaPlayer.create(this, audioList[index]);
             mp.start();
         }
 

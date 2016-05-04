@@ -25,18 +25,32 @@ public class FryAnswer extends AppCompatActivity {
 
 
     String responseList[] = {
-            "It is certain",
-            "Without a doubt",
-            "Yes, definitely",
-            "Most likely",
-            "Yes",
-            "It is unclear, Ask later",
-            "Better not tell you now",
-            "Don’t count on it",
-            "Outlook not so good",
-            "Very doubtful"
+            "Uh... yeah",
+            "Yeah!",
+            "Yes, no, yes, yes! yes!!",
+            "You're right!",
+            "Close enough",
+            "Ohhh, I don't know",
+            "Hey hey, Gimme a break!",
+            "How is that possible?",
+            "No Way!",
+            "no, yeah, no, yeah, no, wait no yeah Yeah!... No... no"
     };
 
+    int audioList[] = {
+            R.raw.fry_uh_yeah_0,
+            R.raw.fry_yeah_1,
+            R.raw.fry_yes_no_yes_2,
+            R.raw.fry_youre_right_3,
+            R.raw.fry_close_enough_4,
+            R.raw.fry_dont_know_5,
+            R.raw.fry_gimme_break_6,
+            R.raw.fry_how_possible_7,
+            R.raw.fry_no_way_8,
+            R.raw.fry_yeah_no_no_9
+
+
+    };
 
 
 
@@ -59,15 +73,14 @@ public class FryAnswer extends AppCompatActivity {
         String noQuestion = getString(R.string.no_question);
 
         if (question.isEmpty() || question.equals(mainQuestion) || question.equals(noQuestion)) {
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.sad_trombone);
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.fry_your_stupid_no_q);
             mp.start();
 
         } else {
             int index = new Random().nextInt(responseList.length);
             mInputQuestion.setText(question);
             mActualResponse.setText(responseList[index]);
-
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.eight_ball);
+            MediaPlayer mp = MediaPlayer.create(this, audioList[index]);
             mp.start();
         }
 

@@ -25,18 +25,29 @@ public class FamilyGuyAnswer extends AppCompatActivity {
 
 
     String responseList[] = {
-            "It is certain",
-            "Without a doubt",
-            "Yes, definitely",
-            "Most likely",
-            "Yes",
-            "It is unclear, Ask later",
-            "Better not tell you now",
-            "Don’t count on it",
-            "Outlook not so good",
-            "Very doubtful"
+            "Yeah!",
+            "Yeahhhh!",
+            "Yeah, that sounds good",
+            "It was my understand that there would be no questions asked!!",
+            "I don't care!!",
+            "I'm sorry, what was that?",
+            "No no no, I don't think so!",
+            "Close, but still no",
+            "You ask a lot of questions, dontcha!"
     };
 
+    int audioList[] = {
+            R.raw.peter_yeah_0,
+            R.raw.peter_yeahhhh_1,
+            R.raw.peter_sounds_good_2,
+            R.raw.peter_no_questions_3,
+            R.raw.peter_dont_care_4,
+            R.raw.peter_dont_know_5,
+            R.raw.peter_dont_think_so_6,
+            R.raw.peter_close_but_no_7,
+            R.raw.peter_ask_alot_q_8
+
+    };
 
 
 
@@ -59,15 +70,14 @@ public class FamilyGuyAnswer extends AppCompatActivity {
         String noQuestion = getString(R.string.no_question);
 
         if (question.isEmpty() || question.equals(mainQuestion) || question.equals(noQuestion)) {
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.sad_trombone);
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.peter_angry_no_q);
             mp.start();
 
         } else {
             int index = new Random().nextInt(responseList.length);
             mInputQuestion.setText(question);
             mActualResponse.setText(responseList[index]);
-
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.eight_ball);
+            MediaPlayer mp = MediaPlayer.create(this, audioList[index]);
             mp.start();
         }
 

@@ -25,18 +25,26 @@ public class PoniesAnswer extends AppCompatActivity {
 
 
     String responseList[] = {
-            "It is certain",
-            "Without a doubt",
-            "Yes, definitely",
-            "Most likely",
-            "Yes",
-            "It is unclear, Ask later",
-            "Better not tell you now",
-            "Don’t count on it",
-            "Outlook not so good",
-            "Very doubtful"
+            "Yes, It's all true",
+            "Yes Yes Yes Yes Yes Yes Yes Yes....",
+            "E-Yup",
+            "Of course!",
+            "Well, Duh",
+            "I don't know about you, But i can't make important decisions on an empty stomach",
+            "Are you loco in the coco?!",
+            "That's so not true!!"
     };
 
+    int audioList[] = {
+            R.raw.ponies_yes_all_true_rd_0,
+            R.raw.ponies_yes_yes_pp_1,
+            R.raw.ponies_eyup_bigmac_2,
+            R.raw.ponies_of_course_ts_3,
+            R.raw.ponies_well_duh_pp_4,
+            R.raw.ponies_cant_decide_ts_5,
+            R.raw.ponies_loco_in_coco_pp_6,
+            R.raw.ponies_not_true_pp_7
+    };
 
 
 
@@ -59,15 +67,14 @@ public class PoniesAnswer extends AppCompatActivity {
         String noQuestion = getString(R.string.no_question);
 
         if (question.isEmpty() || question.equals(mainQuestion) || question.equals(noQuestion)) {
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.sad_trombone);
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.ponies_boring_no_q_pp);
             mp.start();
 
         } else {
             int index = new Random().nextInt(responseList.length);
             mInputQuestion.setText(question);
             mActualResponse.setText(responseList[index]);
-
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.eight_ball);
+            MediaPlayer mp = MediaPlayer.create(this, audioList[index]);
             mp.start();
         }
 
