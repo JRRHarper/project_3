@@ -70,14 +70,19 @@ public class WookieAnswer extends AppCompatActivity {
         mActualResponse = (TextView) findViewById(R.id.actualResponse);
         mChoicesButton = (Button) findViewById(R.id.choicesButton);
 
+        //get the question from the last page and turning into string
         String question = this.getIntent().getExtras().getString("question");
         if(question.isEmpty()){
+            //sets default response and default sound clip
             mActualResponse.setText(R.string.wookie_default_answer);
             MediaPlayer mp = MediaPlayer.create(this, R.raw.wookie_idiot);
             mp.start();
         }else {
+            //sets a random number using Random().nextInt to match array length
             int index = new Random().nextInt(responseList.length);
+            //sets the mInputQuestion text to match the question that was asked
             mInputQuestion.setText(question);
+            //sets the response and the audio to the value selected at random from the arrays
             mActualResponse.setText(responseList[index]);
             MediaPlayer mp = MediaPlayer.create(this, audioList[index]);
             mp.start();

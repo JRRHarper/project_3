@@ -64,7 +64,7 @@ public class PikaAnswer extends AppCompatActivity {
         String question = this.getIntent().getExtras().getString("question");
         if(question.isEmpty()){
             mActualResponse.setText(R.string.pika_default_answer);
-            MediaPlayer mp = MediaPlayer.create(this, R.raw.wookie_idiot);
+            MediaPlayer mp = MediaPlayer.create(this, R.raw.pika_no_q);
             mp.start();
         }else {
             int index = new Random().nextInt(responseList.length);
