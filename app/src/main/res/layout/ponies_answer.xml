@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:text="@string/default_answer"
+            android:text="@string/ponies_default_answer"
             android:textColor="@color/ponies_dh_purple"
             android:textSize="23dp"/>
 

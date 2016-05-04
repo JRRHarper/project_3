@@ -4,8 +4,6 @@
     <string name="ask_question">Ask Question</string>
     <string name="answer_text">You asked...</string>
     <string name="no_question">Wait a minute, You didn\'t ask a question!</string>
-    <string name="wookie_default_answer">Rhawk-Arrgh! - You are an idiot! \n(he doesn\'t seem impressed)</string>
-    <string name="default_answer">I do not understand... please ask again</string>
     <string name="alternate_opinion">Want to ask someone else? \nClick Here!</string>
     <string name="main_page_ask">Ask a question to one of the following</string>
 
@@ -18,7 +16,15 @@
     <string name="fry_ask_q">Ask Phillip J. Fry a question \n(preferably a yes or no question)</string>
     <string name="arnie_ask_q">Ask Arnold Schwarzenegger a question \n(preferably a yes or no question)</string>
 
-
+    <string name="default_answer">I do not understand... please ask again</string>
+    <string name="wookie_default_answer">Rhawk-Arrgh! - You are an idiot! \n(he doesn\'t seem impressed)</string>
+    <string name="pika_default_statement">Instead of talking...</string>
+    <string name="pika_default_answer">Pikachu uses thunderbolt... it\'s super-effective</string>
+    <string name="homer_default_answer">Doh!</string>
+    <string name="ponies_default_answer">Boorrring!</string>
+    <string name="peter_default_answer">Yeah, you know what... To hell with you then! yeah, go to hell, go to hell!</string>
+    <string name="fry_default_answer">You\'re Stupid!</string>
+    <string name="arnie_default_answer">(Arnie seems angry... you better run and get to the choppa!!)</string>
 
     <string name="answer_is">Magic 8 Ball says...</string>
     <string name="wookie_answer_is">Chewbacca says...</string>

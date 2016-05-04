@@ -72,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:text="@string/default_answer"
+            android:text="@string/pika_default_answer"
             android:textColor="@color/pika_red"
             android:textSize="23dp"/>
 

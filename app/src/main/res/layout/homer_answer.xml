@@ -71,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
-            android:text="@string/default_answer"
+            android:text="@string/homer_default_answer"
             android:textColor="@color/homer_yellow"
             android:textSize="23dp"/>
 

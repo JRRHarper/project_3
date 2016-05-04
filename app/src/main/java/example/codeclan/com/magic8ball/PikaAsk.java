@@ -2,6 +2,7 @@ package example.codeclan.com.magic8ball;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.renderscript.ScriptGroup;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -28,6 +29,7 @@ public class PikaAsk extends AppCompatActivity {
 
             String question = this.getIntent().getExtras().getString("question");
             String mainQuestion = getString(R.string.main_page_ask);
+            String noQuestion = getString(R.string.no_question);
 
             mInitialText = (TextView) findViewById(R.id.initialText);
             mQuestionInput = (EditText) findViewById(R.id.descriptionText);
@@ -36,7 +38,7 @@ public class PikaAsk extends AppCompatActivity {
             mChoicesButton = (Button) findViewById(R.id.choicesButton);
 
 
-            if (question.isEmpty() || question.equals(mainQuestion)) {
+            if (question.isEmpty() || question.equals(mainQuestion) || question.equals(noQuestion)) {
                 mQuestionInput.setText(" ");
 
             } else {

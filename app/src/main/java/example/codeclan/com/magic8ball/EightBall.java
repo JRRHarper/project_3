@@ -1,6 +1,9 @@
 package example.codeclan.com.magic8ball;
 
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -26,12 +29,14 @@ public class EightBall extends AppCompatActivity {
     Button mChoicesButton;
 
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.eight_ball);
         String question = this.getIntent().getExtras().getString("question");
         String mainQuestion = getString(R.string.main_page_ask);
+        String noQuestion = getString(R.string.no_question);
 
 
         mInitialText = (TextView) findViewById(R.id.initialText);
@@ -40,7 +45,7 @@ public class EightBall extends AppCompatActivity {
         mFortuneButton = (Button) findViewById(R.id.fortuneButton);
         mChoicesButton = (Button) findViewById(R.id.choicesButton);
 
-        if (question.isEmpty() || question.equals(mainQuestion)) {
+        if (question.isEmpty() || question.equals(mainQuestion) || question.equals(noQuestion)) {
             mQuestionInput.setText(" ");
 
         } else {
@@ -73,7 +78,6 @@ public class EightBall extends AppCompatActivity {
 
             }
         });
-
     }
 }
 
