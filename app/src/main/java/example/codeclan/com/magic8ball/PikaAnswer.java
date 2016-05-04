@@ -25,30 +25,23 @@ public class PikaAnswer extends AppCompatActivity {
 
 
     String responseList[] = {
-            "Argh rugh-rugh - It is certain",
-            "aargh-arghoo - Without a doubt",
-            "Rwaah-oh-oh - Yes, definitely",
-            "Ahhhgh! - Most likely",
-            "whew! - Yes",
-            "Rrrooaarrgghh! I’m Hungry, Ask later",
-            "Wah! snort-snort-snort - Better not tell you now",
-            "Arrrghh! - Don’t count on it",
-            "Woh arg-oh-oh - Outlook not so good",
-            "Rgrah rha - Very doubtful"
+            "Pika! - It is certain",
+            "Pi-Ka! - Without a doubt",
+            "Pika, Pi-Ka! - Yes, definitely",
+            "Piii-ka - I don't know!",
+            "Pii-kaa! - Better not tell you now",
+            "Piiiika - Outlook not so good",
+            "Piiii-ka - Very doubtful"
     };
 
     int audioList[] = {
-            R.raw.pika.pika_yes,
-            R.raw.wookie_without_doubt_1,
-            R.raw.wookie_definitely_2,
-            R.raw.wookie_likely_3,
-            R.raw.wookie_yes_4,
-            R.raw.wookie_hungry_5,
-            R.raw.wookie_later_6,
-            R.raw.wookie_dont_count_7,
-            R.raw.wookie_not_good_8,
-            R.raw.wookie_doubtful_9
-
+            R.raw.pika_yes_0,
+            R.raw.pika_enthusiastic_1,
+            R.raw.pika_definetly_2,
+            R.raw.pika_dont_know_3,
+            R.raw.pika_questionmark_4,
+            R.raw.pika_sad_5,
+            R.raw.pika_also_sad_6
     };
 
 
